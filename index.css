@@ -2,8 +2,9 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: linear-gradient(to top, #cdd7ddba, #cdd7ddcc),
+	background: linear-gradient(to top, #cdd7ddb0, #cdd7dd70),
 		url(./assets/background.jpeg) repeat top center;
+	background-attachment: fixed;
 	color: #cdd7dd;
 	padding: 0;
 	color: black;
