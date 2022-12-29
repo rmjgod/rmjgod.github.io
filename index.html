@@ -11,27 +11,404 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900"
 		/>
+		<script>
+			function seeMoreFunction(id) {
+				const moreContent = document.getElementById(id + '-content');
+				const btnText = document.getElementById(id + '-button');
+				if (moreContent.style.display === 'none') {
+					moreContent.style.display = 'inline';
+					btnText.innerHTML = 'Read Less';
+				} else {
+					moreContent.style.display = 'none';
+					btnText.innerHTML = 'Read More';
+				}
+			}
+		</script>
 	</head>
-	<div class="app-bar">
-		<div style="margin: 15px">This is the left</div>
-		<div class="growing-spacer"></div>
-		<div style="margin: 15px">This is the right</div>
-	</div>
 	<body>
-		<div class="main-row">
-			<div class="info-bar">
-				<div
-					style="height: 50px; width: 50px; background-color: black"
-				></div>
+		<div class="container">
+			<div>
+				<h1>About</h1>
+				<div class="info-bar" style="background-color: #e0bbe4">
+					<div class="profile-header-container">
+						<div class="profile-img-div"></div>
+						<div class="attribute-container">
+							<h3>Name:</h3>
+							<p>Ryan Godfrey</p>
+							<h3>Contact:</h3>
+							<p>
+								<a href="mailto:ryanmjgodfrey@gmail.com"
+									>ryanmjgodfrey@gmail.com</a
+								>
+							</p>
+							<p><a href="tel:7057064950">(705) 706 - 4950</a></p>
+						</div>
+					</div>
+					<br />
+					<p>
+						Hey! I'm Ryan, and I am a Software Engineering graduate
+						(2022), with High Distinction from Carleton University.
+						I am currently looking for my next opportunity in the
+						software engineering industry. My interests include:
+						database design, UI/UX design, problem solving, and
+						creating solutions with a purpose.
+						<span id="bio-content" class="more-content"
+							>I have experience working in a range of work
+							environments, from completely independent work, to
+							agile software teams, to pair-programming focussed
+							teams. Within these teams, I have been both a
+							mentor, and a student. I am available to start
+							immediately, so if you have an opening that needs to
+							be filled, feel free to reach out to me at the
+							details above!</span
+						>
+						<button
+							id="bio-button"
+							class="more-button"
+							onclick="seeMoreFunction('bio')"
+						>
+							Read More
+						</button>
+					</p>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Education:</h3>
+						<p>
+							<i>CGPA: 10.48 / 12 (GPA ~3.8 / 4)</i>
+						</p>
+						<p>
+							Bachelor of Software Engineering with High
+							Distinction, Carleton University
+						</p>
+					</div>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Experience:</h3>
+						<p>
+							<strong>Wireless Systems Engineer</strong>
+						</p>
+						<p>
+							<i>Royal Canadian Mounted Police</i>
+						</p>
+						<p>Ottawa, ON</p>
+						<p style="text-align: right">
+							<i>02 - 08 / 2021</i>
+						</p>
+						<p>
+							<strong>Programmer/ Analyst</strong>
+						</p>
+						<p>
+							<i>Canada Revenue Agency</i>
+						</p>
+						<p>Ottawa, ON</p>
+						<p style="text-align: right">
+							<i>09 - 12 / 2020</i>
+						</p>
+					</div>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Teaching:</h3>
+						<p>
+							<strong>Teaching Assistant (Java)</strong>
+						</p>
+						<p>
+							<i>Intro to Object-Oriented Programming</i>
+						</p>
+						<p>Carleton Univeristy</p>
+						<p style="text-align: right">
+							<i>01 - 04 / 2022</i>
+						</p>
+						<p>
+							<strong>Teaching Assistant (Python)</strong>
+						</p>
+						<p>
+							<i>Computation and Programming</i>
+						</p>
+						<p>Carleton Univeristy</p>
+						<p style="text-align: right">
+							<i>09 - 12 / 2021</i>
+						</p>
+						<p>
+							<strong>Teaching Assistant (Java)</strong>
+						</p>
+						<p>
+							<i>Intro to Object-Oriented Programming</i>
+						</p>
+						<p>Carleton Univeristy</p>
+						<p style="text-align: right">
+							<i>09 - 12 / 2019</i>
+						</p>
+						<p>
+							<strong>Teaching Assistant (C)</strong>
+						</p>
+						<p>
+							<i>Foundations of Imperative Programming</i>
+						</p>
+						<p>Carleton Univeristy</p>
+						<p style="text-align: right">
+							<i>05 - 06 / 2019</i>
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="growing-spacer"></div>
 			<div class="main-column">
-				<h3 style="margin-bottom: 0; line-height: 1">This is</h3>
-				<h1 style="margin-top: 0; line-height: 1">RYAN GODFREY</h1>
+				<h1>Projects</h1>
+				<div
+					class="project-container"
+					style="background-color: #8ac0de"
+				>
+					<div class="project-header">
+						<div class="dummy-button-container">
+							<div
+								class="dummy-button"
+								style="background-color: red"
+							></div>
+							<div
+								class="dummy-button"
+								style="background-color: orange"
+							></div>
+							<div
+								class="dummy-button"
+								style="background-color: green"
+							></div>
+						</div>
+						<h2 class="project-title">
+							<a href="http://thereelrg.github.io"
+								>thereelrg.github.io</a
+							>
+						</h2>
+						<div class="dummy-button-container"></div>
+					</div>
+					<div class="project-body">
+						<h3>Purpose</h3>
+						<p>
+							This website was created to serve as a static
+							gallery of projects that I have created or
+							contributed to significantly. It is also intended to
+							"kill two birds with one stone", and provide the
+							opportunity for you to learn a bit about my
+							background as a growing software engineer.
+						</p>
+						<h3>Execution</h3>
+						<p>
+							This website was created using a majority of
+							<i>pure</i> HTML5 and CSS, with a little javascript
+							sprinkled in for some flare. All code is viewable
+							through your browser developer tools, as well as on
+							my
+							<a
+								href="http://github.com/thereelrg/thereelrg.github.io"
+								>GitHub</a
+							>. A majority of the typography is the
+							<a
+								href="https://fonts.google.com/specimen/Kanit?query=kanit"
+								>Kanit</a
+							>
+							font, while the main titles ("About", "Projects",
+							"Stack") are in the
+							<a
+								href="https://fonts.google.com/specimen/Rubik+80s+Fade?query=rubik+80"
+								>Rubik 80's Fade</a
+							>
+							font.
+						</p>
+						<h3>Inspiration</h3>
+						<p>
+							The style of this website was inspired by my
+							interest in the neo-brutalism UI design style. I
+							tried to stick with a muted RGB colour pallette,
+							while including some elements that are common in
+							software development.
+						</p>
+						<br />
+					</div>
+				</div>
+				<div
+					class="project-container"
+					style="background-color: #8ac0de"
+				>
+					<div class="project-header">
+						<div class="dummy-button-container">
+							<div
+								class="dummy-button"
+								style="background-color: red"
+							></div>
+							<div
+								class="dummy-button"
+								style="background-color: orange"
+							></div>
+							<div
+								class="dummy-button"
+								style="background-color: green"
+							></div>
+						</div>
+						<h2 class="project-title">
+							<a href="http://team-mcnamara.ca"
+								>team-mcnamara.ca</a
+							>
+						</h2>
+						<div class="dummy-button-container"></div>
+					</div>
+					<div class="project-body">
+						<a href="http://team-mcnamara.ca"
+							><img src="./assets/team-mcnamara-screenshot.png"
+						/></a>
+						<h3>Purpose</h3>
+						<p>
+							This web application was created to serve as a
+							globally availble, and accessible platform to access
+							everything that has to do with Team McNamara, a
+							men's curling team from Ottawa, ON.
+							<span
+								id="team-mcnamara-purpose-content"
+								class="more-content"
+								>Prior to the development of this website,
+								information about the team was only available
+								through Facebook, Twitter, or Instagram
+								profiles, which limited viewship to those that
+								had accounts on the appropriate platform. This
+								application also opens the door to experiment
+								and develop novel solutions to enhance the
+								viewing experience for the amateur-level of
+								play. Notably, it provides a way to seemlessly
+								watch a live stream (from YouTube or Facebook),
+								while seeing the linescores on the same screen.
+								This functionality was previously only available
+								when a game has been professionally streamed, or
+								if it was streamed through a third-party
+								service, such as OBS, and constantly monitored
+								by a moderator.</span
+							>
+							<button
+								id="team-mcnamara-purpose-button"
+								class="more-button"
+								onclick="seeMoreFunction('team-mcnamara-purpose')"
+							>
+								Read More
+							</button>
+						</p>
+						<h3>Execution</h3>
+						<p>
+							This website was created using the React framework
+							as a foundation, with Material UI elements for the
+							front-end. Google Firestore and Analytics are used
+							throughout the application to provide real-time data
+							to the user and analytics information for
+							performance monitoring.
+							<span
+								id="team-mcnamara-execution-content"
+								class="more-content"
+								>The theming that is used throughout the
+								application was made to coincide with the
+								overall branding of the team that has already
+								been established, however, it was implemented in
+								such a way as to be easily modifiable if the
+								need arises.</span
+							>
+							<button
+								id="team-mcnamara-execution-button"
+								class="more-button"
+								onclick="seeMoreFunction('team-mcnamara-execution')"
+							>
+								Read More
+							</button>
+						</p>
+						<h3>Inspiration</h3>
+						<p>
+							The inspiration of this application came from my
+							first-hand knowledge of the inadequecies with the
+							current landscape of curling websites and platforms,
+							and the possibilities to grow the viewer base. The
+							intention with this narrow-scope applicaiton is to
+							expand the functionalities to a point that numerous
+							teams can utilize the platform and grow the audience
+							of the sport.
+						</p>
+						<br />
+					</div>
+				</div>
 			</div>
-			<div class="growing-spacer"></div>
-			<div class="growing-spacer"></div>
+			<div>
+				<h1>Stack</h1>
+				<div class="info-bar" style="background-color: #b5ddd1">
+					<div class="attribute-container" style="width: 100%">
+						<h3>Languages</h3>
+						<ul>
+							<li>
+								<p>C / C# / C++</p>
+							</li>
+							<li>
+								<p>CSS</p>
+							</li>
+							<li>
+								<p>HTML5</p>
+							</li>
+							<li>
+								<p>Java</p>
+							</li>
+							<li>
+								<p>Javascript / Typescript</p>
+							</li>
+						</ul>
+					</div>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Operating Systems</h3>
+						<ul>
+							<li>
+								<p>MacOS</p>
+							</li>
+							<li>
+								<p>Windows</p>
+							</li>
+							<li>
+								<p>Linux (Ubuntu)</p>
+							</li>
+							<li>
+								<p>iOS</p>
+							</li>
+						</ul>
+					</div>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Front-end</h3>
+						<ul>
+							<li>
+								<p>React</p>
+							</li>
+							<li>
+								<p>React-Native</p>
+							</li>
+						</ul>
+					</div>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Back-end</h3>
+						<ul>
+							<li>
+								<p>Spring</p>
+							</li>
+							<li>
+								<p>.NET</p>
+							</li>
+						</ul>
+					</div>
+					<div class="attribute-container" style="width: 100%">
+						<h3>Databases</h3>
+						<ul>
+							<li>
+								<p>MongoDB</p>
+							</li>
+							<li>
+								<p>Google Firestore</p>
+							</li>
+							<li>
+								<p>FaunaDB</p>
+							</li>
+							<li>
+								<p>MySQL</p>
+							</li>
+							<li>
+								<p>PostgreSQL</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
-	<footer>Site by Ryan Godfrey</footer>
 </html>
