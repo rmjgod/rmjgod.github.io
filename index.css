@@ -71,11 +71,18 @@ p {
 	width: 100%;
 }
 
+a {
+	color: slategray;
+}
+
 .attribute-container {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: baseline;
+	min-width: 250px;
+	max-width: 400px;
 }
 
 .attribute-container a {
@@ -85,6 +92,13 @@ p {
 
 .attribute-container a:visited {
 	color: #000;
+}
+
+.experience-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1;
 }
 
 .main-column {
@@ -101,7 +115,8 @@ p {
 .info-bar {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: stretch;
 	flex: 1;
 
 	min-width: 300px;
@@ -120,7 +135,6 @@ p {
 .project-container {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 
 	margin-bottom: 2rem;
 	overflow: hidden;
@@ -174,8 +188,8 @@ p {
 }
 
 .profile-img-div {
-	width: 100px !important;
-	height: 100px !important;
+	width: 100px;
+	height: 100px;
 	margin: 5px;
 	border-radius: 50px;
 	background-image: url(./assets/IMG_0793.webp);
@@ -194,36 +208,72 @@ p {
 	color: black;
 	box-shadow: 2px 3px 0px 1px black;
 }
+
 .more-button:active {
 	box-shadow: none;
 	transform: translate(2px, 3px);
 }
 
-.more-content {
-	display: none;
+.logo-container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+	gap: 10px;
+}
+
+.logo-container img {
+	justify-self: center;
+	width: 50px;
+	overflow: hidden;
+}
+
+.logo-container div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.logo-container p {
+	text-align: center;
+	margin-top: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid black;
+	color: black;
+	box-shadow: 2px 3px 0px 1px black;
 }
 
 @media only screen and (max-width: 1350px) {
 	.container {
 		flex-direction: column;
-		align-items: center;
-		min-height: 100vh;
+		align-items: stretch;
 	}
 
 	.main-column {
-		width: 100%;
 		margin: 2rem 0;
 		max-width: 100%;
 	}
 
 	.info-bar {
-		flex-direction: row;
-		width: 100%;
+		align-items: stretch;
 		max-width: 100%;
-		margin-top: 0;
+	}
+
+	.attribute-container {
+		margin: 0 5px;
+	}
+	.experience-container {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.profile-img-div {
 		align-self: flex-start;
+	}
+
+	.profile-header-container {
+		align-items: flex-start;
 	}
 }
