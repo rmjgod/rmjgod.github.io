@@ -293,12 +293,11 @@ a {
 		justify-content: space-between;
 	}
 
-	.profile-header-container .attribute-container {
-		flex-wrap: none;
+	.attribute-container {
+		margin: 0 5px;
 	}
 
 	.profile-header-container .bio {
-		margin-left: 5px;
 		padding-left: 5px;
 		min-width: 350px;
 		flex: 1;
