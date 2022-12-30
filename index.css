@@ -198,6 +198,10 @@ a {
 	justify-content: flex-start;
 }
 
+.profile-header-container .attribute-container {
+	margin: 0 5px;
+}
+
 .profile-img-div {
 	width: 100px;
 	height: 100px;
@@ -275,16 +279,9 @@ a {
 	.attribute-container {
 		margin: 0 5px;
 	}
+
 	.experience-container {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	.profile-img-div {
-		align-self: flex-start;
-	}
-
-	.profile-header-container {
-		align-items: flex-start;
 	}
 }
