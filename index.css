@@ -5,6 +5,7 @@ html {
 	background: linear-gradient(to top, #cdd7ddb0, #cdd7dd70),
 		url(./assets/background.jpeg) repeat top center;
 	background-attachment: fixed;
+	background-color: #cdd7dd;
 	color: #cdd7dd;
 	padding: 0;
 	color: black;

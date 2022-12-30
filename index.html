@@ -23,6 +23,19 @@
 					btnText.innerHTML = 'Read More';
 				}
 			}
+			function moreProjectsFunction() {
+				const moreContent = document.getElementById(
+					'more-projects-content'
+				);
+				const btnText = document.getElementById('more-projects-button');
+				if (moreContent.style.display === 'none') {
+					moreContent.style.display = 'inline';
+					btnText.innerHTML = 'Less Projects';
+				} else {
+					moreContent.style.display = 'none';
+					btnText.innerHTML = 'More Projects';
+				}
+			}
 		</script>
 	</head>
 	<body>
@@ -360,187 +373,203 @@
 					</div>
 				</div>
 
-				<!-- Wilderness Survival App -->
-				<div
-					class="project-container"
-					style="background-color: #8ac0de"
-				>
-					<div class="project-header">
-						<div class="dummy-button-container">
-							<div
-								class="dummy-button"
-								style="background-color: red"
-							></div>
-							<div
-								class="dummy-button"
-								style="background-color: orange"
-							></div>
-							<div
-								class="dummy-button"
-								style="background-color: green"
-							></div>
+				<span id="more-projects-content" style="display: none">
+					<!-- Wilderness Survival App -->
+					<div
+						class="project-container"
+						style="background-color: #8ac0de"
+					>
+						<div class="project-header">
+							<div class="dummy-button-container">
+								<div
+									class="dummy-button"
+									style="background-color: red"
+								></div>
+								<div
+									class="dummy-button"
+									style="background-color: orange"
+								></div>
+								<div
+									class="dummy-button"
+									style="background-color: green"
+								></div>
+							</div>
+							<h2 class="project-title">
+								<a
+									href="https://github.com/Mariam05/WildernessSurvivalApp"
+									>Wilderness Survival App</a
+								>
+							</h2>
+							<div class="dummy-button-container">
+								<img
+									title="React Native"
+									src="./assets/framework-logos/react-logo.webp"
+								/>
+								<img
+									title="TypeScript"
+									src="./assets/lang-logos/typescript-logo.webp"
+								/>
+								<img
+									title="MongoDB"
+									src="./assets/database-logos/mongoDB-logo.webp"
+								/>
+							</div>
 						</div>
-						<h2 class="project-title">
-							<a
-								href="https://github.com/Mariam05/WildernessSurvivalApp"
-								>Wilderness Survival App</a
-							>
-						</h2>
-						<div class="dummy-button-container">
-							<img
-								title="React Native"
-								src="./assets/framework-logos/react-logo.webp"
-							/>
-							<img
-								title="TypeScript"
-								src="./assets/lang-logos/typescript-logo.webp"
-							/>
-							<img
-								title="MongoDB"
-								src="./assets/database-logos/mongoDB-logo.webp"
-							/>
+						<div class="project-body">
+							<h3>Purpose</h3>
+							<p>
+								This project was developed as part of my
+								fourth-year capstone project, with a group of 3
+								individuals. The application was designed and
+								intended to improve vital tracking for
+								wilderness first responders. The current method
+								for recording and tracking vitals in an
+								emergency situation in the wilderness is a pen
+								and paper (a standardized form, if available).
+								This method has obvious inherent flaws that can
+								make the process of tracking vitals a hinderance
+								to the care that needs to be provided to the
+								wounded and sick.
+							</p>
+							<h3>Execution</h3>
+							<p>
+								The application was built using React Native for
+								a seamless development process for both Android
+								and iOS platforms. MongoDB / MongoDB Realm was
+								the selected choice as a database and
+								authentication provider. The application
+								provides tools to aid with vital tracking such
+								as: a standardized workflow to guide the user
+								through the basic set of vitals, custom remiders
+								to retake a vital and, timers to assist in
+								recording time-based vitals such as pulse or
+								respiration.
+								<span
+									id="wilderness-survival-purpose-content"
+									style="display: none"
+									>In addition, the app processes data for a
+									patient into interactive graphs that can
+									help visualize trends in a patient's vitals
+									as well as identify changes that may not be
+									obvious to the responder. Static resources
+									are also available in the application to
+									help a user prepare for a wilderness
+									adventure with items such as: checklists to
+									ensure all appropriate equipment is packed,
+									how-to guides to ensure caretaking
+									procedures are up-to-date, and a small
+									wilderness survival encyclopedia to be used
+									as reference when providing care. Patient
+									data is also able to be exported to a PDF to
+									be shared with secondary responders such as
+									paramedics or medical transport personnel.
+									The application and all of it's
+									functionalities are available to the user
+									"out-of-the-box", however, if the user
+									wishes to save their data for use accross
+									multiple devices, they are able to setup an
+									account at any time.</span
+								>
+								<button
+									id="wilderness-survival-purpose-button"
+									class="more-button"
+									onclick="seeMoreFunction('wilderness-survival-purpose')"
+								>
+									Read More
+								</button>
+							</p>
+							<h3>Inspiration</h3>
+							<p>
+								The inspiration for the development of this
+								applicaiton came from the identification of the
+								flaws and "old-school" practices that are in
+								place for wilderness survival. While these
+								practices are tried and tested, they can always
+								be improved, and in some cases, are in desperate
+								need of a refinement.
+							</p>
+							<br />
 						</div>
 					</div>
-					<div class="project-body">
-						<h3>Purpose</h3>
-						<p>
-							This project was developed as part of my fourth-year
-							capstone project, with a group of 3 individuals. The
-							application was designed and intended to improve
-							vital tracking for wilderness first responders. The
-							current method for recording and tracking vitals in
-							an emergency situation in the wilderness is a pen
-							and paper (a standardized form, if available). This
-							method has obvious inherent flaws that can make the
-							process of tracking vitals a hinderance to the care
-							that needs to be provided to the wounded and sick.
-						</p>
-						<h3>Execution</h3>
-						<p>
-							The application was built using React Native for a
-							seamless development process for both Android and
-							iOS platforms. MongoDB / MongoDB Realm was the
-							selected choice as a database and authentication
-							provider. The application provides tools to aid with
-							vital tracking such as: a standardized workflow to
-							guide the user through the basic set of vitals,
-							custom remiders to retake a vital and, timers to
-							assist in recording time-based vitals such as pulse
-							or respiration.
-							<span
-								id="wilderness-survival-purpose-content"
-								style="display: none"
-								>In addition, the app processes data for a
-								patient into interactive graphs that can help
-								visualize trends in a patient's vitals as well
-								as identify changes that may not be obvious to
-								the responder. Static resources are also
-								available in the application to help a user
-								prepare for a wilderness adventure with items
-								such as: checklists to ensure all appropriate
-								equipment is packed, how-to guides to ensure
-								caretaking procedures are up-to-date, and a
-								small wilderness survival encyclopedia to be
-								used as reference when providing care. Patient
-								data is also able to be exported to a PDF to be
-								shared with secondary responders such as
-								paramedics or medical transport personnel. The
-								application and all of it's functionalities are
-								available to the user "out-of-the-box", however,
-								if the user wishes to save their data for use
-								accross multiple devices, they are able to setup
-								an account at any time.</span
-							>
-							<button
-								id="wilderness-survival-purpose-button"
-								class="more-button"
-								onclick="seeMoreFunction('wilderness-survival-purpose')"
-							>
-								Read More
-							</button>
-						</p>
-						<h3>Inspiration</h3>
-						<p>
-							The inspiration for the development of this
-							applicaiton came from the identification of the
-							flaws and "old-school" practices that are in place
-							for wilderness survival. While these practices are
-							tried and tested, they can always be improved, and
-							in some cases, are in desperate need of a
-							refinement.
-						</p>
-						<br />
-					</div>
-				</div>
 
-				<!-- LookInnaBook -->
-				<div
-					class="project-container"
-					style="background-color: #8ac0de"
+					<!-- LookInnaBook -->
+					<div
+						class="project-container"
+						style="background-color: #8ac0de"
+					>
+						<div class="project-header">
+							<div class="dummy-button-container">
+								<div
+									class="dummy-button"
+									style="background-color: red"
+								></div>
+								<div
+									class="dummy-button"
+									style="background-color: orange"
+								></div>
+								<div
+									class="dummy-button"
+									style="background-color: green"
+								></div>
+							</div>
+							<h2 class="project-title">
+								<a
+									href="https://github.com/john-breton/LookInnaBook"
+									>LookInnaBook</a
+								>
+							</h2>
+							<div class="dummy-button-container">
+								<div style="background-color: #5c5c5c"></div>
+								<img
+									title="Java"
+									src="./assets/lang-logos/java-logo.webp"
+								/>
+								<img
+									title="PostgreSQL"
+									src="./assets/database-logos/postgresql-logo.webp"
+								/>
+							</div>
+						</div>
+						<div class="project-body">
+							<h3>Purpose</h3>
+							<p>
+								This application was created with a team of 2
+								members for a final project in a database
+								management course during my undergrad. The
+								intention was to have an application that allows
+								users to manage and peruse a library of books.
+								The application also required that users with
+								admin privileges are able to modify and update
+								the stock and availability of books as
+								necessary.
+							</p>
+							<h3>Execution</h3>
+							<p>
+								The application was developed largely using the
+								Java Swing library for front-end (GUI)
+								development, and a PostgreSQL database as the
+								data storage solution. It featured screens for
+								customers to peruse the available books, add
+								them to a cart, complete billing and shipping
+								information, and "complete" an order (this was
+								not actually functional because that wasn't the
+								point, but the foundation is there). For the
+								administrators, the application has the
+								functionality to modify all aspects of the
+								books, view purchasing reports, order more
+								books, and fulfill customer orders.
+							</p>
+							<br />
+						</div>
+					</div>
+				</span>
+				<button
+					id="more-projects-button"
+					class="more-button"
+					onclick="moreProjectsFunction()"
 				>
-					<div class="project-header">
-						<div class="dummy-button-container">
-							<div
-								class="dummy-button"
-								style="background-color: red"
-							></div>
-							<div
-								class="dummy-button"
-								style="background-color: orange"
-							></div>
-							<div
-								class="dummy-button"
-								style="background-color: green"
-							></div>
-						</div>
-						<h2 class="project-title">
-							<a
-								href="https://github.com/john-breton/LookInnaBook"
-								>LookInnaBook</a
-							>
-						</h2>
-						<div class="dummy-button-container">
-							<div style="background-color: #5c5c5c"></div>
-							<img
-								title="Java"
-								src="./assets/lang-logos/java-logo.webp"
-							/>
-							<img
-								title="PostgreSQL"
-								src="./assets/database-logos/postgresql-logo.webp"
-							/>
-						</div>
-					</div>
-					<div class="project-body">
-						<h3>Purpose</h3>
-						<p>
-							This application was created with a team of 2
-							members for a final project in a database management
-							course during my undergrad. The intention was to
-							have an application that allows users to manage and
-							peruse a library of books. The application also
-							required that users with admin privileges are able
-							to modify and update the stock and availability of
-							books as necessary.
-						</p>
-						<h3>Execution</h3>
-						<p>
-							The application was developed largely using the Java
-							Swing library for front-end (GUI) development, and a
-							PostgreSQL database as the data storage solution. It
-							featured screens for customers to peruse the
-							available books, add them to a cart, complete
-							billing and shipping information, and "complete" an
-							order (this was not actually functional because that
-							wasn't the point, but the foundation is there). For
-							the administrators, the application has the
-							functionality to modify all aspects of the books,
-							view purchasing reports, order more books, and
-							fulfill customer orders.
-						</p>
-						<br />
-					</div>
-				</div>
+					More Projects
+				</button>
 			</div>
 			<div>
 				<h1>Stack</h1>
@@ -604,6 +633,7 @@
 							<p>TypeScript</p>
 						</div>
 					</div>
+					<br />
 					<h3>Operating Systems</h3>
 					<div class="logo-container">
 						<div>
@@ -635,6 +665,7 @@
 							<p>Windows</p>
 						</div>
 					</div>
+					<br />
 					<h3>Front-end</h3>
 					<div class="logo-container">
 						<div>
@@ -659,6 +690,7 @@
 							<p>React Native</p>
 						</div>
 					</div>
+					<br />
 					<h3>Back-end</h3>
 					<div class="logo-container">
 						<div>
@@ -676,6 +708,7 @@
 							<p>.Net</p>
 						</div>
 					</div>
+					<br />
 					<h3>Databases</h3>
 					<div class="logo-container">
 						<div>
