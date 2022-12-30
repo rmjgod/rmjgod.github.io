@@ -44,6 +44,7 @@ h2.project-title {
 	border-radius: 10px;
 	padding: 0 10px;
 	flex-wrap: nowrap;
+	white-space: nowrap;
 }
 
 h2.project-title a {
@@ -160,14 +161,22 @@ a {
 .project-header .dummy-button-container {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: space-between;
-	width: 50px;
+	max-width: 105px;
 }
 
 .project-header .dummy-button {
 	border-radius: 10px;
 	height: 10px;
 	width: 10px;
+	margin: 5px;
+}
+
+.project-header img {
+	height: 25px;
+	object-fit: contain;
+	margin: 0 5px;
 }
 
 .project-body {
