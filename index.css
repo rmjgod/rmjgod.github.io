@@ -71,7 +71,6 @@ p {
 	font-weight: 200;
 	text-align: left;
 	margin: 0;
-	width: 100%;
 }
 
 a {
@@ -82,8 +81,7 @@ a {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: baseline;
+	align-items: stretch;
 	min-width: 250px;
 	max-width: 400px;
 }
@@ -101,7 +99,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	flex: 1;
 }
 
 .main-column {
@@ -118,7 +115,7 @@ a {
 .info-bar {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: stretch;
 	justify-content: stretch;
 	flex: 1;
 
@@ -194,18 +191,32 @@ a {
 .profile-header-container {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.profile-image-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.profile-links {
+	display: flex;
+	justify-content: space-around;
 }
 
 .profile-header-container .attribute-container {
-	margin: 0 5px;
+	margin-left: 5px;
+	max-width: 183px;
+	min-width: 183px;
 }
 
 .profile-img-div {
 	width: 100px;
 	height: 100px;
-	margin: 5px;
+	margin: 10px 5px;
 	border-radius: 50px;
 	background-image: url(./assets/IMG_0793.webp);
 	background-size: 100px;
@@ -237,6 +248,7 @@ a {
 }
 
 .logo-container img {
+	align-self: center;
 	justify-self: center;
 	width: 50px;
 	overflow: hidden;
@@ -245,7 +257,7 @@ a {
 .logo-container div {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: stretch;
 	justify-content: flex-end;
 }
 
@@ -276,12 +288,20 @@ a {
 		max-width: 100%;
 	}
 
-	.attribute-container {
-		margin: 0 5px;
-	}
-
 	.experience-container {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	.profile-header-container .attribute-container {
+		flex-wrap: none;
+	}
+
+	.profile-header-container .bio {
+		margin-left: 5px;
+		padding-left: 5px;
+		min-width: 350px;
+		flex: 1;
+		border-left: 2px solid black;
 	}
 }
