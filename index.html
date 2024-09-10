@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<title>Ryan Godfrey</title>
-		<link rel="stylesheet" href="index.css" />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Rubik+80s+Fade"
-		/>
+			href="index.css" />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900"
-		/>
+			href="https://fonts.googleapis.com/css?family=Rubik+80s+Fade" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" />
 		<script>
 			function seeMoreFunction(id) {
 				const moreContent = document.getElementById(id + '-content');
@@ -24,9 +24,7 @@
 				}
 			}
 			function moreProjectsFunction() {
-				const moreContent = document.getElementById(
-					'more-projects-content'
-				);
+				const moreContent = document.getElementById('more-projects-content');
 				const btnText = document.getElementById('more-projects-button');
 				if (moreContent.style.display === 'none') {
 					moreContent.style.display = 'inline';
@@ -42,7 +40,9 @@
 		<div class="container">
 			<div>
 				<h1>About</h1>
-				<div class="info-bar" style="background-color: #b5ddd1">
+				<div
+					class="info-bar"
+					style="background-color: #b5ddd1">
 					<div class="profile-header-container">
 						<div class="profile-image-container">
 							<div class="profile-img-div"></div>
@@ -52,9 +52,7 @@
 										style="width: 35px"
 										src="./assets/github-logo.png"
 								/></a>
-								<a
-									href="http://www.linkedin.com/in/ryanmjgodfrey"
-								>
+								<a href="http://www.linkedin.com/in/ryanmjgodfrey">
 									<img
 										style="width: 35px"
 										src="./assets/linkedin-logo.png"
@@ -66,69 +64,51 @@
 							<p>Ryan Godfrey</p>
 							<h3>Contact:</h3>
 							<p>
-								<a href="mailto:ryanmjgodfrey@gmail.com"
-									>ryanmjgodfrey@gmail.com</a
-								>
+								<a href="mailto:ryanmjgodfrey@gmail.com">ryanmjgodfrey@gmail.com</a>
 							</p>
 							<p><a href="tel:7057064950">(705) 706 - 4950</a></p>
 						</div>
 						<br />
 						<p class="bio">
-							Hey! I'm Ryan, and I am a Bachelor of Software
-							Engineering graduate (2022), with High Distinction
-							from Carleton University. I am currently working at
-							Lockheed Martin Canada as an Associate Software
-							Engineer on the Canadian Surface Combatant (CSC)
-							project, as well as various other teams that support
-							the CSC. In addition to my full-time work, I have
-							created a few websites for various competitive
-							curling teams (see team-mcnamara.ca). More sites
-							will be added to my list of projects when they are
-							finalized/released. My interests include: database
-							design, UI/UX design, problem solving, and creating
-							solutions with a purpose.
-							<span id="bio-content" style="display: none"
-								>I have experience working in a range of work
-								environments, from completely independent work,
-								to agile software teams, to pair-programming
-								focused teams. Within these teams, I have been
-								both a mentor, and a student. I am passionate
-								about learning and sharpening my skills, so I am
-								currently pursuing a college certificate from
-								Algonquin College with a specialization in
-								Mobile and Web User Experience Design. I will
-								also be starting a Master of Engineering
-								(part-time) in Electrical and Computer
-								Engineering from the University of Ottawa with a
-								specialization in Software Engineering that
-								begins in January 2025.</span
-							>
-							<button
-								id="bio-button"
-								class="more-button"
-								onclick="seeMoreFunction('bio')"
-							>
-								Read More
-							</button>
+							Hey! I'm Ryan, and I am a Software Developer with a Bachelor of Software
+							Engineering (2022), from Carleton University. I am currently working at
+							Nav Canada as a Software Developer with the surveillance data
+							distribution team. In addition to my full-time work, I have created a
+							few websites for various competitive curling teams (see below).I have
+							experience working in a range of work environments, from completely
+							independent work, to large agile software teams, and pair-programming
+							focused teams. Within these teams, I have been both a mentor, and a
+							student.
 						</p>
 					</div>
 					<div class="experience-container">
 						<div class="attribute-container">
 							<h3>Experience:</h3>
+							<!-- Nav Canada -->
+							<p>
+								<strong>Software Developer</strong>
+							</p>
+							<p>
+								<i>Nav Canada</i>
+							</p>
+							<p>Ottawa, ON</p>
+							<p style="text-align: right">
+								<i>Sept 2024 - Present</i>
+							</p>
 							<!-- Lockheed Martin Canada -->
 							<p>
-								<strong>Software Engineer Associate</strong>
+								<strong>Software Developer Associate</strong>
 							</p>
 							<p>
 								<i>Lockheed Martin Canada</i>
 							</p>
 							<p>Ottawa, ON</p>
 							<p style="text-align: right">
-								<i>Feb 2023 - Present</i>
+								<i>Feb 2023 - August 2024</i>
 							</p>
 							<!-- RCMP -->
 							<p>
-								<strong>Wireless Systems Engineer</strong>
+								<strong>Wireless Systems Engineer (Co-op)</strong>
 							</p>
 							<p>
 								<i>Royal Canadian Mounted Police</i>
@@ -139,7 +119,7 @@
 							</p>
 							<!-- CRA -->
 							<p>
-								<strong>Programmer/ Analyst</strong>
+								<strong>Programmer/ Analyst (Co-op)</strong>
 							</p>
 							<p>
 								<i>Canada Revenue Agency</i>
@@ -201,30 +181,16 @@
 							<!-- UOttawa -->
 							<p>
 								<strong
-									>Master of Electrical & Computer Engineering
-									(Part-time)</strong
-								>
+									>Master of Electrical & Computer Engineering (Part-time)
+								</strong>
 							</p>
 							<p>University of Ottawa</p>
 							<p>
 								<i>Expected Graduation: Dec 2027</i>
 							</p>
-							<!-- Algonquin -->
-							<p>
-								<strong
-									>College Certificate - Mobile and Web User
-									Experience Design</strong
-								>
-							</p>
-							<p>Algonquin College</p>
-							<p>
-								<i>Expected Completion: December 2024</i>
-							</p>
 							<!-- Carleton -->
 							<p>
-								<strong
-									>Bachelor of Software Engineering</strong
-								>
+								<strong>Bachelor of Software Engineering</strong>
 							</p>
 							<p>with High Distinction</p>
 							<p>Carleton University</p>
@@ -241,69 +207,52 @@
 				<!-- rmjgod.github.io -->
 				<div
 					class="project-container"
-					style="background-color: #8ac0de"
-				>
+					style="background-color: #8ac0de">
 					<div class="project-header">
 						<div class="dummy-button-container">
 							<div
 								class="dummy-button"
-								style="background-color: red"
-							></div>
+								style="background-color: red"></div>
 							<div
 								class="dummy-button"
-								style="background-color: orange"
-							></div>
+								style="background-color: orange"></div>
 							<div
 								class="dummy-button"
-								style="background-color: green"
-							></div>
+								style="background-color: green"></div>
 						</div>
 						<h2 class="project-title">
-							<a href="http://rmjgod.github.io"
-								>rmjgod.github.io</a
-							>
+							<a href="http://rmjgod.github.io">rmjgod.github.io</a>
 						</h2>
 						<div class="dummy-button-container">
 							<img
 								title="HTML5"
-								src="./assets/lang-logos/HTML5-logo.webp"
-							/>
+								src="./assets/lang-logos/HTML5-logo.webp" />
 							<img
 								title="CSS3"
-								src="./assets/lang-logos/CSS3-logo.webp"
-							/>
+								src="./assets/lang-logos/CSS3-logo.webp" />
 							<img
 								title="JavaScript"
-								src="./assets/lang-logos/javascript-logo.webp"
-							/>
+								src="./assets/lang-logos/javascript-logo.webp" />
 						</div>
 					</div>
 					<div class="project-body">
 						<h3>Purpose</h3>
 						<p>
-							This website was created to serve as a static
-							gallery of projects that I have created or
-							contributed to significantly. It is also intended to
-							"kill two birds with one stone", and provide the
-							opportunity for you to learn a bit about my
-							background as a growing software engineer.
+							This website was created to serve as a static gallery of projects that I
+							have created or contributed to significantly. It is also intended to
+							"kill two birds with one stone", and provide the opportunity for you to
+							learn a bit about my background as a growing software engineer.
 						</p>
 						<h3>Execution</h3>
 						<p>
 							This website was created using a majority of
-							<i>pure</i> HTML5 and CSS, with a little javascript
-							sprinkled in for some flare. All code is viewable
-							through your browser developer tools, as well as on
-							my
-							<a href="http://github.com/rmjgod/rmjgod.github.io"
-								>GitHub</a
-							>. A majority of the typography is the
-							<a
-								href="https://fonts.google.com/specimen/Kanit?query=kanit"
-								>Kanit</a
-							>
-							font, while the main titles ("About", "Projects",
-							"Stack") are in the
+							<i>pure</i> HTML5 and CSS, with a little javascript sprinkled in for
+							some flare. All code is viewable through your browser developer tools,
+							as well as on my
+							<a href="http://github.com/rmjgod/rmjgod.github.io">GitHub</a>. A
+							majority of the typography is the
+							<a href="https://fonts.google.com/specimen/Kanit?query=kanit">Kanit</a>
+							font, while the main titles ("About", "Projects", "Stack") are in the
 							<a
 								href="https://fonts.google.com/specimen/Rubik+80s+Fade?query=rubik+80"
 								>Rubik 80's Fade</a
@@ -312,249 +261,209 @@
 						</p>
 						<h3>Inspiration</h3>
 						<p>
-							The style of this website was inspired by my
-							interest in the neo-brutalism UI design style. I
-							tried to stick with a muted RGB colour pallette,
-							while including some elements that are common in
-							software development.
+							The style of this website was inspired by my interest in the
+							neo-brutalism UI design style. I tried to stick with a muted RGB colour
+							pallette, while including some elements that are common in UI
+							development.
 						</p>
 						<br />
 					</div>
 				</div>
 
-				<!-- Team McNamara -->
+				<!-- Curling Websites -->
 				<div
 					class="project-container"
-					style="background-color: #8ac0de"
-				>
+					style="background-color: #8ac0de">
 					<div class="project-header">
 						<div class="dummy-button-container">
 							<div
 								class="dummy-button"
-								style="background-color: red"
-							></div>
+								style="background-color: red"></div>
 							<div
 								class="dummy-button"
-								style="background-color: orange"
-							></div>
+								style="background-color: orange"></div>
 							<div
 								class="dummy-button"
-								style="background-color: green"
-							></div>
+								style="background-color: green"></div>
 						</div>
 						<h2 class="project-title">
-							<a href="http://team-mcnamara.ca"
-								>team-mcnamara.ca</a
-							>
+							<a href="http://teaminglis.ca">curling.websites</a>
 						</h2>
 						<div class="dummy-button-container">
 							<img
 								title="React"
-								src="./assets/framework-logos/react-logo.webp"
-							/>
+								src="./assets/framework-logos/react-logo.webp" />
 							<img
 								title="JavaScript"
-								src="./assets/lang-logos/javascript-logo.webp"
-							/>
+								src="./assets/lang-logos/javascript-logo.webp" />
 							<img
 								title="Firestore"
-								src="./assets/database-logos/firestore-logo.webp"
-							/>
+								src="./assets/database-logos/firestore-logo.webp" />
 						</div>
 					</div>
 					<div class="project-body">
-						<a href="http://team-mcnamara.ca"
-							><img src="./assets/team-mcnamara-screenshot.png"
+						<a href="http://teaminglis.ca"
+							><img src="./assets/curling-team-screenshot.png"
 						/></a>
 						<h3>Purpose</h3>
 						<p>
-							This web application was created to serve as a
-							globally availble, and accessible platform to access
-							everything that has to do with Team McNamara, a
-							men's curling team from Ottawa, ON.
+							These web applications were created to serve as a globally availble, and
+							accessible platforms to access everything that has to do with a specific
+							curling team.
 							<span
-								id="team-mcnamara-purpose-content"
+								id="curling-team-purpose-content"
 								style="display: none"
-								>Prior to the development of this website,
-								information about the team was only available
-								through Facebook, Twitter, or Instagram
-								profiles, which limited viewship to those that
-								had accounts on the appropriate platform. This
-								application also opens the door to experiment
-								and develop novel solutions to enhance the
-								viewing experience for the amateur-level of
-								play. Notably, it provides a way to seemlessly
-								watch a live stream (from YouTube or Facebook),
-								while seeing the linescores on the same screen.
-								This functionality was previously only available
-								when a game has been professionally streamed, or
-								if it was streamed through a third-party
-								service, such as OBS, and constantly monitored
-								by a moderator.</span
+								>Prior to the development of these sites, information about curling
+								teams is only primarily available through Facebook, X (formerly
+								Twitter), or Instagram profiles, which limited viewship to those
+								that had accounts on the appropriate platform. These applications
+								also open the door to experiment and develop novel solutions to
+								enhance the viewing experience for the amateur-level of play.
+								Notably, it provides a way to seemlessly watch a live stream (from
+								YouTube or Facebook), while seeing the linescores on the same
+								screen. This functionality was previously only available when a game
+								has been professionally streamed, or if it was streamed through a
+								third-party service, such as OBS, and constantly monitored by a
+								moderator. Additionally, when these sites are paired with my
+								custom-developed auto-scoring system that pulls scores from various
+								publically available live scoring providers, website managers are
+								able to "set it and forget it" and allow the scores to update
+								themselves as the game progresses.</span
 							>
 							<button
-								id="team-mcnamara-purpose-button"
+								id="curling-team-purpose-button"
 								class="more-button"
-								onclick="seeMoreFunction('team-mcnamara-purpose')"
-							>
+								onclick="seeMoreFunction('curling-team-purpose')">
 								Read More
 							</button>
 						</p>
 						<h3>Execution</h3>
 						<p>
-							This website was created using the React framework
-							as a foundation, with Material UI elements for the
-							front-end. Google Firestore and Analytics are used
-							throughout the application to provide real-time data
-							to the user and analytics information for
-							performance monitoring.
+							This website was created using the React framework as a foundation, with
+							Material UI elements for the front-end. Google Firestore and Analytics
+							are used throughout the application to provide real-time data to the
+							user and analytics information for performance monitoring.
 							<span
-								id="team-mcnamara-execution-content"
+								id="curling-team-execution-content"
 								style="display: none"
-								>The theming that is used throughout the
-								application was made to coincide with the
-								overall branding of the team that has already
-								been established, however, it was implemented in
-								such a way as to be easily modifiable if the
-								need arises.</span
+								>The theming that is used throughout the application was made to
+								coincide with the overall branding of the team that has already been
+								established, however, it was implemented in such a way as to be
+								easily modifiable if the need arises.</span
 							>
 							<button
-								id="team-mcnamara-execution-button"
+								id="curling-team-execution-button"
 								class="more-button"
-								onclick="seeMoreFunction('team-mcnamara-execution')"
-							>
+								onclick="seeMoreFunction('curling-team-execution')">
 								Read More
 							</button>
 						</p>
 						<h3>Inspiration</h3>
 						<p>
-							The inspiration of this application came from my
-							first-hand knowledge of the inadequecies with the
-							current landscape of curling websites and platforms,
-							and the possibilities to grow the viewer base. The
-							intention with this narrow-scope applicaiton is to
-							expand the functionalities to a point that numerous
-							teams can utilize the platform and grow the audience
+							The inspiration of this application came from my first-hand knowledge of
+							the inadequecies with the current landscape of curling websites and
+							platforms, and the possibilities to grow the viewer base. The intention
+							with this narrow-scope applicaiton is to expand the functionalities to a
+							point that numerous teams can utilize the platform and grow the audience
 							of the sport.
 						</p>
+						<!-- TODO Add individual site links -->
 						<br />
 					</div>
 				</div>
 
-				<span id="more-projects-content" style="display: none">
+				<span
+					id="more-projects-content"
+					style="display: none">
 					<!-- Wilderness Survival App -->
 					<div
 						class="project-container"
-						style="background-color: #8ac0de"
-					>
+						style="background-color: #8ac0de">
 						<div class="project-header">
 							<div class="dummy-button-container">
 								<div
 									class="dummy-button"
-									style="background-color: red"
-								></div>
+									style="background-color: red"></div>
 								<div
 									class="dummy-button"
-									style="background-color: orange"
-								></div>
+									style="background-color: orange"></div>
 								<div
 									class="dummy-button"
-									style="background-color: green"
-								></div>
+									style="background-color: green"></div>
 							</div>
 							<h2 class="project-title">
-								<a
-									href="https://github.com/Mariam05/WildernessSurvivalApp"
+								<a href="https://github.com/Mariam05/WildernessSurvivalApp"
 									>Wilderness Survival App</a
 								>
 							</h2>
 							<div class="dummy-button-container">
 								<img
 									title="React Native"
-									src="./assets/framework-logos/react-logo.webp"
-								/>
+									src="./assets/framework-logos/react-logo.webp" />
 								<img
 									title="TypeScript"
-									src="./assets/lang-logos/typescript-logo.webp"
-								/>
+									src="./assets/lang-logos/typescript-logo.webp" />
 								<img
 									title="MongoDB"
-									src="./assets/database-logos/mongodb-logo.webp"
-								/>
+									src="./assets/database-logos/mongodb-logo.webp" />
 							</div>
 						</div>
 						<div class="project-body">
 							<h3>Purpose</h3>
 							<p>
-								This project was developed as part of my
-								fourth-year capstone project, with a group of 3
-								individuals. The application was designed and
-								intended to improve vital tracking for
-								wilderness first responders. The current method
-								for recording and tracking vitals in an
-								emergency situation in the wilderness is a pen
-								and paper (a standardized form, if available).
-								This method has obvious inherent flaws that can
-								make the process of tracking vitals a hinderance
-								to the care that needs to be provided to the
-								wounded and sick.
+								This project was developed as part of my fourth-year capstone
+								project, with a group of 3 individuals. The application was designed
+								and intended to improve vital tracking for wilderness first
+								responders. The current method for recording and tracking vitals in
+								an emergency situation in the wilderness is a pen and paper (a
+								standardized form, if available). This method has obvious inherent
+								flaws that can make the process of tracking vitals a hinderance to
+								the care that needs to be provided to the wounded and sick.
 							</p>
 							<h3>Execution</h3>
 							<p>
-								The application was built using React Native for
-								a seamless development process for both Android
-								and iOS platforms. MongoDB / MongoDB Realm was
-								the selected choice as a database and
-								authentication provider. The application
-								provides tools to aid with vital tracking such
-								as: a standardized workflow to guide the user
-								through the basic set of vitals, custom remiders
-								to retake a vital and, timers to assist in
-								recording time-based vitals such as pulse or
-								respiration.
+								The application was built using React Native for a seamless
+								development process for both Android and iOS platforms. MongoDB /
+								MongoDB Realm was the selected choice as a database and
+								authentication provider. The application provides tools to aid with
+								vital tracking such as: a standardized workflow to guide the user
+								through the basic set of vitals, custom remiders to retake a vital
+								and, timers to assist in recording time-based vitals such as pulse
+								or respiration.
 								<span
 									id="wilderness-survival-purpose-content"
 									style="display: none"
-									>In addition, the app processes data for a
-									patient into interactive graphs that can
-									help visualize trends in a patient's vitals
-									as well as identify changes that may not be
-									obvious to the responder. Static resources
-									are also available in the application to
-									help a user prepare for a wilderness
-									adventure with items such as: checklists to
-									ensure all appropriate equipment is packed,
-									how-to guides to ensure caretaking
-									procedures are up-to-date, and a small
-									wilderness survival encyclopedia to be used
-									as reference when providing care. Patient
-									data is also able to be exported to a PDF to
-									be shared with secondary responders such as
-									paramedics or medical transport personnel.
-									The application and all of it's
-									functionalities are available to the user
-									"out-of-the-box", however, if the user
-									wishes to save their data for use accross
-									multiple devices, they are able to setup an
-									account at any time.</span
+									>In addition, the app processes data for a patient into
+									interactive graphs that can help visualize trends in a patient's
+									vitals as well as identify changes that may not be obvious to
+									the responder. Static resources are also available in the
+									application to help a user prepare for a wilderness adventure
+									with items such as: checklists to ensure all appropriate
+									equipment is packed, how-to guides to ensure caretaking
+									procedures are up-to-date, and a small wilderness survival
+									encyclopedia to be used as reference when providing care.
+									Patient data is also able to be exported to a PDF to be shared
+									with secondary responders such as paramedics or medical
+									transport personnel. The application and all of it's
+									functionalities are available to the user "out-of-the-box",
+									however, if the user wishes to save their data for use accross
+									multiple devices, they are able to setup an account at any
+									time.</span
 								>
 								<button
 									id="wilderness-survival-purpose-button"
 									class="more-button"
-									onclick="seeMoreFunction('wilderness-survival-purpose')"
-								>
+									onclick="seeMoreFunction('wilderness-survival-purpose')">
 									Read More
 								</button>
 							</p>
 							<h3>Inspiration</h3>
 							<p>
-								The inspiration for the development of this
-								applicaiton came from the identification of the
-								flaws and "old-school" practices that are in
-								place for wilderness survival. While these
-								practices are tried and tested, they can always
-								be improved, and in some cases, are in desperate
-								need of a refinement.
+								The inspiration for the development of this applicaiton came from
+								the identification of the flaws and "old-school" practices that are
+								in place for wilderness survival. While these practices are tried
+								and tested, they can always be improved, and in some cases, are in
+								desperate need of a refinement.
 							</p>
 							<br />
 						</div>
@@ -563,81 +472,66 @@
 					<!-- Trustworthy Product Reviews -->
 					<div
 						class="project-container"
-						style="background-color: #8ac0de"
-					>
+						style="background-color: #8ac0de">
 						<div class="project-header">
 							<div class="dummy-button-container">
 								<div
 									class="dummy-button"
-									style="background-color: red"
-								></div>
+									style="background-color: red"></div>
 								<div
 									class="dummy-button"
-									style="background-color: orange"
-								></div>
+									style="background-color: orange"></div>
 								<div
 									class="dummy-button"
-									style="background-color: green"
-								></div>
+									style="background-color: green"></div>
 							</div>
 							<h2 class="project-title">
-								<a
-									href="https://github.com/john-breton/Trustworthy-Product-Reviews"
+								<a href="https://github.com/john-breton/Trustworthy-Product-Reviews"
 									>Trusty Product Reviews</a
 								>
 							</h2>
 							<div class="dummy-button-container">
 								<img
 									title="Spring"
-									src="./assets/framework-logos/spring-logo.webp"
-								/>
+									src="./assets/framework-logos/spring-logo.webp" />
 								<img
 									title="java"
-									src="./assets/lang-logos/java-logo.webp"
-								/>
+									src="./assets/lang-logos/java-logo.webp" />
 								<img
 									title="H2"
-									src="./assets/database-logos/h2-logo.webp"
-								/>
+									src="./assets/database-logos/h2-logo.webp" />
 							</div>
 						</div>
 						<div class="project-body">
 							<h3>Purpose</h3>
 							<p>
-								This web application was created with a team of
-								5 students for a course on project management.
-								The application allows users to review products
-								(star rating), follow other users, and filter
-								reviews based on other reviewers that are
-								like-minded (Jaccard distance) or users that
-								they follow.
+								This web application was created with a team of 5 students for a
+								course on project management. The application allows users to review
+								products (star rating), follow other users, and filter reviews based
+								on other reviewers that are like-minded (Jaccard distance) or users
+								that they follow.
 							</p>
 							<h3>Execution</h3>
 							<p>
-								This application was developed as a Single Page
-								Application (SPA) with the Java programming
-								language, utilizing the Sqpring framework with
-								an integrated H2 database. The application was
-								compiled and deployed using Maven and Heroku
-								(since the changes to Heroku's terms of service
-								<i>(Nov 2022)</i>, the deployment is no longer
-								visible, as it was deployed on a free tier).
+								This application was developed as a Single Page Application (SPA)
+								with the Java programming language, utilizing the Sqpring framework
+								with an integrated H2 database. The application was compiled and
+								deployed using Maven and Heroku (since the changes to Heroku's terms
+								of service
+								<i>(Nov 2022)</i>, the deployment is no longer visible, as it was
+								deployed on a free tier).
 							</p>
 							<h3>Inspiration</h3>
 							<p>
-								The inspiration for this project came from the
-								want / need to see reviews that are relevant to
-								the user, instead of the reviews that are
-								relevant only to the product. This application,
-								allows for the "old way" of skimming through
-								reviews, as well as allowing users to see
-								reviews from users that are likely to be
-								interested in the same products, and have the
-								same tastes as you. This allows for a more
-								biased rating that will divert the user way from
-								products that are more-likely to disappoint them
-								in-particular, and attract them toward product
-								that they will find interesting.
+								The inspiration for this project came from the want / need to see
+								reviews that are relevant to the user, instead of the reviews that
+								are relevant only to the product. This application, allows for the
+								"old way" of skimming through reviews, as well as allowing users to
+								see reviews from users that are likely to be interested in the same
+								products, and have the same tastes as you. This allows for a more
+								biased rating that will divert the user way from products that are
+								more-likely to disappoint them in-particular, and attract them
+								toward product that they will find interesting.
 							</p>
 							<br />
 						</div>
@@ -646,26 +540,21 @@
 					<!-- LookInnaBook -->
 					<div
 						class="project-container"
-						style="background-color: #8ac0de"
-					>
+						style="background-color: #8ac0de">
 						<div class="project-header">
 							<div class="dummy-button-container">
 								<div
 									class="dummy-button"
-									style="background-color: red"
-								></div>
+									style="background-color: red"></div>
 								<div
 									class="dummy-button"
-									style="background-color: orange"
-								></div>
+									style="background-color: orange"></div>
 								<div
 									class="dummy-button"
-									style="background-color: green"
-								></div>
+									style="background-color: green"></div>
 							</div>
 							<h2 class="project-title">
-								<a
-									href="https://github.com/john-breton/LookInnaBook"
+								<a href="https://github.com/john-breton/LookInnaBook"
 									>LookInnaBook</a
 								>
 							</h2>
@@ -673,42 +562,33 @@
 								<div style="background-color: #5c5c5c"></div>
 								<img
 									title="Java"
-									src="./assets/lang-logos/java-logo.webp"
-								/>
+									src="./assets/lang-logos/java-logo.webp" />
 								<img
 									title="PostgreSQL"
-									src="./assets/database-logos/postgresql-logo.webp"
-								/>
+									src="./assets/database-logos/postgresql-logo.webp" />
 							</div>
 						</div>
 						<div class="project-body">
 							<h3>Purpose</h3>
 							<p>
-								This application was created with a team of 2
-								members for a final project in a database
-								management course during my undergrad. The
-								intention was to have an application that allows
-								users to manage and peruse a library of books.
-								The application also required that users with
-								admin privileges are able to modify and update
-								the stock and availability of books as
-								necessary.
+								This application was created with a team of 2 members for a final
+								project in a database management course during my undergrad. The
+								intention was to have an application that allows users to manage and
+								peruse a library of books. The application also required that users
+								with admin privileges are able to modify and update the stock and
+								availability of books as necessary.
 							</p>
 							<h3>Execution</h3>
 							<p>
-								The application was developed largely using the
-								Java Swing library for front-end (GUI)
-								development, and a PostgreSQL database as the
-								data storage solution. It featured screens for
-								customers to peruse the available books, add
-								them to a cart, complete billing and shipping
-								information, and "complete" an order (this was
-								not actually functional because that wasn't the
-								point, but the foundation is there). For the
-								administrators, the application has the
-								functionality to modify all aspects of the
-								books, view purchasing reports, order more
-								books, and fulfill customer orders.
+								The application was developed largely using the Java Swing library
+								for front-end (GUI) development, and a PostgreSQL database as the
+								data storage solution. It featured screens for customers to peruse
+								the available books, add them to a cart, complete billing and
+								shipping information, and "complete" an order (this was not actually
+								functional because that wasn't the point, but the foundation is
+								there). For the administrators, the application has the
+								functionality to modify all aspects of the books, view purchasing
+								reports, order more books, and fulfill customer orders.
 							</p>
 							<br />
 						</div>
@@ -717,70 +597,63 @@
 				<button
 					id="more-projects-button"
 					class="more-button"
-					onclick="moreProjectsFunction()"
-				>
+					onclick="moreProjectsFunction()">
 					More Projects
 				</button>
 			</div>
 			<div>
 				<h1>Stack</h1>
-				<div class="info-bar" style="background-color: #e0bbe4">
+				<div
+					class="info-bar"
+					style="background-color: #e0bbe4">
 					<h3>Languages</h3>
 					<div class="logo-container">
 						<div>
 							<img
 								src="./assets/lang-logos/C-logo.webp"
-								title="C"
-							/>
+								title="C" />
 							<p>C</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/C-sharp-logo.webp"
-								title="C#"
-							/>
+								title="C#" />
 							<p>C#</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/C++-logo.webp"
-								title="C++"
-							/>
+								title="C++" />
 							<p>C++</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/CSS3-logo.webp"
-								title="CSS3"
-							/>
+								title="CSS3" />
 							<p>CSS3</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/HTML5-logo.webp"
-								title="HTML5"
-							/>
+								title="HTML5" />
 							<p>HTML5</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/java-logo.webp"
-								title="Java"
-							/>
+								title="Java" />
 							<p>Java</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/javascript-logo.webp"
-								title="JavaScript"
-							/>
+								title="JavaScript" />
 							<p>JavaScript</p>
 						</div>
 						<div>
 							<img
 								src="./assets/lang-logos/typescript-logo.webp"
-								title="TypeScript"
-							/>
+								title="TypeScript" />
 							<p>TypeScript</p>
 						</div>
 					</div>
@@ -790,29 +663,25 @@
 						<div>
 							<img
 								src="./assets/os-logos/apple-logo.webp"
-								title="MacOS"
-							/>
+								title="MacOS" />
 							<p>MacOS</p>
 						</div>
 						<div>
 							<img
 								src="./assets/os-logos/ubuntu-logo.webp"
-								title="Ubuntu"
-							/>
+								title="Ubuntu" />
 							<p>Ubuntu</p>
 						</div>
 						<div>
 							<img
 								src="./assets/os-logos/apple-logo.webp"
-								title="iOS"
-							/>
+								title="iOS" />
 							<p>iOS</p>
 						</div>
 						<div>
 							<img
 								src="./assets/os-logos/windows-logo.webp"
-								title="Windows"
-							/>
+								title="Windows" />
 							<p>Windows</p>
 						</div>
 					</div>
@@ -822,22 +691,19 @@
 						<div>
 							<img
 								src="./assets/framework-logos/mui-logo.webp"
-								title="Material UI"
-							/>
+								title="Material UI" />
 							<p>Material UI</p>
 						</div>
 						<div>
 							<img
 								src="./assets/framework-logos/react-logo.webp"
-								title="React"
-							/>
+								title="React" />
 							<p>React</p>
 						</div>
 						<div>
 							<img
 								src="./assets/framework-logos/react-logo.webp"
-								title="React Native"
-							/>
+								title="React Native" />
 							<p>React Native</p>
 						</div>
 					</div>
@@ -847,15 +713,13 @@
 						<div>
 							<img
 								src="./assets/framework-logos/spring-logo.webp"
-								title="Spring"
-							/>
+								title="Spring" />
 							<p>Spring</p>
 						</div>
 						<div>
 							<img
 								src="./assets/framework-logos/net-logo.webp"
-								title=".Net"
-							/>
+								title=".Net" />
 							<p>.Net</p>
 						</div>
 					</div>
@@ -865,43 +729,37 @@
 						<div>
 							<img
 								src="./assets/database-logos/fauna-logo.webp"
-								title="FaunaDB"
-							/>
+								title="FaunaDB" />
 							<p>FaunaDB</p>
 						</div>
 						<div>
 							<img
 								src="./assets/database-logos/firestore-logo.webp"
-								title="Google Firestore"
-							/>
+								title="Google Firestore" />
 							<p>Firestore</p>
 						</div>
 						<div>
 							<img
 								src="./assets/database-logos/h2-logo.webp"
-								title="H2"
-							/>
+								title="H2" />
 							<p>H2</p>
 						</div>
 						<div>
 							<img
 								src="./assets/database-logos/mongodb-logo.webp"
-								title="MongoDB"
-							/>
+								title="MongoDB" />
 							<p>MongoDB</p>
 						</div>
 						<div>
 							<img
 								src="./assets/database-logos/mysql-logo.webp"
-								title="MySQL"
-							/>
+								title="MySQL" />
 							<p>MySQL</p>
 						</div>
 						<div>
 							<img
 								src="./assets/database-logos/postgresql-logo.webp"
-								title="PostgreSQL"
-							/>
+								title="PostgreSQL" />
 							<p>PostgreSQL</p>
 						</div>
 					</div>
