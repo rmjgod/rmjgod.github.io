@@ -73,8 +73,21 @@ p {
 	margin: 0;
 }
 
+p a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+p img {
+	height: 25px;
+	width: auto;
+	object-fit: contain;
+	margin: 5px;
+}
+
 a {
-	color: slategray;
+	color: rgb(84, 94, 229);
 }
 
 .attribute-container {
@@ -183,9 +196,15 @@ a {
 	padding: 5px;
 }
 
-.project-body img {
+.project-img img {
 	width: calc(100% + 10px);
 	margin: -5px;
+}
+
+.project-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .profile-header-container {
