@@ -196,7 +196,7 @@ a {
 	padding: 5px;
 }
 
-.project-body p a {
+.project-body > p > a {
 	display: inline-flex;
 }
 
