@@ -196,6 +196,10 @@ a {
 	padding: 5px;
 }
 
+.project-body a {
+	display: inline-flex;
+}
+
 .project-img img {
 	width: calc(100% + 10px);
 	margin: -5px;
