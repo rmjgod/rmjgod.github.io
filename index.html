@@ -7,6 +7,9 @@
 			href="index.css" />
 		<link
 			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Archivo+Black" />
+		<link
+			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Rubik+80s+Fade" />
 		<link
 			rel="stylesheet"
@@ -18,9 +21,11 @@
 				if (moreContent.style.display === 'none') {
 					moreContent.style.display = 'inline';
 					btnText.innerHTML = 'Read Less';
+					btnText.ariaExpanded = true;
 				} else {
 					moreContent.style.display = 'none';
 					btnText.innerHTML = 'Read More';
+					btnText.ariaExpanded = false;
 				}
 			}
 			function moreProjectsFunction() {
@@ -29,56 +34,68 @@
 				if (moreContent.style.display === 'none') {
 					moreContent.style.display = 'inline';
 					btnText.innerHTML = 'Less Projects';
+					btnText.ariaExpanded = true;
 				} else {
 					moreContent.style.display = 'none';
 					btnText.innerHTML = 'More Projects';
+					btnText.ariaExpanded = false;
 				}
 			}
 		</script>
 	</head>
 	<body>
+		<div class="container" style="flex-direction: column;">
+			<div class="title">
+				<img alt='Ryan Godfrey Head-shot' class="profile-img-div" src="./assets/IMG_0793.webp"></img>
+			<h1>Ryan Godfrey</h1>
+			</div>
+			<div
+				class="info-bar"
+				style="background-color: #8ac0de; max-width: none; margin-top: 8px;">
+				<div class="profile-header-container">
+					<p class="bio">
+						Hey! I'm Ryan, and I am a Software Engineer in Training with a Bachelor of
+						Software Engineering (2022), from Carleton University. I am employed at Nav
+						Canada as a Software Developer within the Surveillance Data Distribution
+						team. In addition to my full-time work, I have created a few websites for
+						various competitive curling teams (see below). I have this site as a gallery
+						of my work, more details below!
+					</p>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<div>
 				<h1>About</h1>
-				<div
-					class="info-bar"
-					style="background-color: #b5ddd1">
+				<div class="info-bar">
 					<div class="profile-header-container">
-						<div class="profile-image-container">
-							<div class="profile-img-div"></div>
-							<div class="profile-links">
-								<a href="http://github.com/rmjgod">
-									<img
-										alt="GitHub Logo"
-										style="width: 35px"
-										src="./assets/github-logo.png"
-								/></a>
-								<a href="http://www.linkedin.com/in/ryanmjgodfrey">
-									<img
-										alt="LinkedIn Logo"
-										style="width: 35px"
-										src="./assets/linkedin-logo.png"
-								/></a>
-							</div>
+						<div class="profile-links" >
+							<a href="http://github.com/rmjgod">
+								<img
+									alt="GitHub Logo"
+									style="width: 35px"
+									src="./assets/github-logo.png"
+							/></a>
+							<a href="http://www.linkedin.com/in/ryanmjgodfrey">
+								<img
+									alt="LinkedIn Logo"
+									style="width: 35px"
+									src="./assets/linkedin-logo.png"
+							/></a>
 						</div>
 						<div class="attribute-container">
-							<h3>Name:</h3>
-							<p>Ryan Godfrey</p>
-							<h3>Contact:</h3>
+							<h3 style="margin-top: 0;">Contact:</h3>
 							<p>
-								<a href="mailto:ryanmjgodfrey@gmail.com">ryanmjgodfrey@gmail.com</a>
+								<a href="mailto:ryanmjgodfrey@gmail.com">
+								<img alt="Send an email to Ryan Godfrey" src="./assets/email.png"/>
+								ryanmjgodfrey@gmail.com</a>
 							</p>
-							<p><a href="tel:7057064950">(705) 706 - 4950</a></p>
+							<p>
+								<a href="tel:7057064950">
+									<img alt="Call Ryan Godfrey" src="./assets/telephone.png"/>
+									(705) 706 - 4950
+								</a></p>
 						</div>
-						<br />
-						<p class="bio">
-							Hey! I'm Ryan, and I am a Software Engineer in Training with a Bachelor
-							of Software Engineering (2022), from Carleton University. I am employed
-							at Nav Canada as a Software Developer within the Surveillance Data
-							Distribution team. In addition to my full-time work, I have created a
-							few websites for various competitive curling teams (see below). I have
-							this site as a gallery of my work, more details below!
-						</p>
 					</div>
 					<div class="experience-container">
 						<div class="attribute-container">
@@ -91,7 +108,7 @@
 								<i>Nav Canada</i>
 							</p>
 							<p>Ottawa, ON</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Sept 2024 - Present</i>
 							</p>
 							<!-- Lockheed Martin Canada -->
@@ -102,7 +119,7 @@
 								<i>Lockheed Martin Canada</i>
 							</p>
 							<p>Ottawa, ON</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Feb 2023 - August 2024</i>
 							</p>
 							<!-- RCMP -->
@@ -113,7 +130,7 @@
 								<i>Royal Canadian Mounted Police</i>
 							</p>
 							<p>Ottawa, ON</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Feb - Aug 2021</i>
 							</p>
 							<!-- CRA -->
@@ -124,7 +141,7 @@
 								<i>Canada Revenue Agency</i>
 							</p>
 							<p>Ottawa, ON</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Sept - Dec 2020</i>
 							</p>
 						</div>
@@ -138,7 +155,7 @@
 								<i>Intro to Object-Oriented Programming</i>
 							</p>
 							<p>Carleton University</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Jan - Apr 2022</i>
 							</p>
 							<!-- Comp & Programming -->
@@ -149,7 +166,7 @@
 								<i>Computation and Programming</i>
 							</p>
 							<p>Carleton University</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Sept - Dec 2021</i>
 							</p>
 							<!-- Intro to OO -->
@@ -160,7 +177,7 @@
 								<i>Intro to Object-Oriented Programming</i>
 							</p>
 							<p>Carleton University</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>Sept - Dec 2019</i>
 							</p>
 							<!-- Found of Imperative Programming -->
@@ -171,7 +188,7 @@
 								<i>Foundations of Imperative Programming</i>
 							</p>
 							<p>Carleton University</p>
-							<p style="font-size: small; margin-bottom: 10px">
+							<p style="font-size: 16px; margin-bottom: 10px">
 								<i>May - Jun 2019</i>
 							</p>
 						</div>
@@ -184,7 +201,7 @@
 								</strong>
 							</p>
 							<p>University of Ottawa</p>
-							<p>
+							<p style="font-size: 16px;">
 								<i>Expected Graduation: Dec 2026</i>
 							</p>
 							<!-- Carleton -->
@@ -193,7 +210,7 @@
 							</p>
 							<p>with High Distinction</p>
 							<p>Carleton University</p>
-							<p>
+							<p style="font-size: 16px;">
 								<i>CGPA: 10.48 / 12 (GPA ~3.8 / 4)</i>
 							</p>
 						</div>
@@ -204,9 +221,7 @@
 				<h1>Projects</h1>
 
 				<!-- rmjgod.github.io -->
-				<div
-					class="project-container"
-					style="background-color: #8ac0de">
+				<div class="project-container">
 					<div class="project-header">
 						<div class="dummy-button-container">
 							<div
@@ -273,9 +288,7 @@
 				</div>
 
 				<!-- Curling Websites -->
-				<div
-					class="project-container"
-					style="background-color: #8ac0de">
+				<div class="project-container">
 					<div class="project-header">
 						<div class="dummy-button-container">
 							<div
@@ -314,6 +327,21 @@
 								alt="Screenshot of Team Inglis' Website Homepage"
 								src="./assets/curling-team-screenshot.png"
 						/></a>
+						<!-- Add individual site links -->
+						<p class="project-links">
+							<a href="https://TeamInglis.ca"
+								><img
+									alt="Team Inglis Logo"
+									src="./assets/team_inglis_logo.png" />
+								<b>TeamInglis.ca</b></a
+							>
+							<a href="https://TeamBrunton.ca"
+								><img
+									alt="Team Brunton Logo"
+									src="./assets/team_brunton_logo.svg" />
+								<b>TeamBrunton.ca</b></a
+							>
+						</p>
 						<h3>Purpose</h3>
 						<p>
 							These web applications were created to serve as a globally available,
@@ -376,22 +404,6 @@
 							point that numerous teams can utilize the platform and grow the audience
 							of the sport.
 						</p>
-						<!-- Add individual site links -->
-						<p class="project-links">
-							<a href="https://TeamInglis.ca"
-								><img
-									alt="Team Inglis Logo"
-									src="./assets/team_inglis_logo.png" />
-								<b>TeamInglis.ca</b></a
-							>
-							<a href="https://TeamBrunton.ca"
-								><img
-									alt="Team Brunton Logo"
-									src="./assets/team_brunton_logo.svg" />
-								<b>TeamBrunton.ca</b></a
-							>
-						</p>
-						<br />
 					</div>
 				</div>
 
@@ -399,9 +411,7 @@
 					id="more-projects-content"
 					style="display: none">
 					<!-- Wilderness Survival App -->
-					<div
-						class="project-container"
-						style="background-color: #8ac0de">
+					<div class="project-container">
 						<div class="project-header">
 							<div class="dummy-button-container">
 								<div
@@ -496,9 +506,7 @@
 					</div>
 
 					<!-- Trustworthy Product Reviews -->
-					<div
-						class="project-container"
-						style="background-color: #8ac0de">
+					<div class="project-container">
 						<div class="project-header">
 							<div class="dummy-button-container">
 								<div
@@ -567,9 +575,7 @@
 					</div>
 
 					<!-- LookInnaBook -->
-					<div
-						class="project-container"
-						style="background-color: #8ac0de">
+					<div class="project-container">
 						<div class="project-header">
 							<div class="dummy-button-container">
 								<div

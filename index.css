@@ -17,16 +17,27 @@ html {
 	justify-content: space-between;
 	width: 80vw;
 	max-width: 1500px;
-	margin: 2rem;
 }
 
 h1 {
 	align-self: center;
-	font-family: 'Rubik 80s Fade', sans-serif;
-	font-size: 60px;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 56px;
 	text-align: center;
 	text-transform: uppercase;
 	margin: 1rem 0 0 0;
+}
+
+div.title {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+div.title h1 {
+	font-size: 80px;
 }
 
 h2 {
@@ -67,7 +78,7 @@ h3 {
 
 p {
 	font-family: 'Kanit', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 200;
 	text-align: left;
 	margin: 0;
@@ -135,14 +146,18 @@ a {
 	min-width: 300px;
 	max-width: 300px;
 	margin: 0;
-	padding: 10px 5px;
+	padding: 8px 8px;
 
 	border-radius: 10px;
-	background-color: #cdd7dd;
+	background-color: #b5ddd1;
 	border: 2px solid black;
 	font-weight: bold;
 	color: black;
 	box-shadow: 3px 4px 0px 1px black;
+}
+
+.info-bar h3 {
+	font-weight: bold;
 }
 
 .project-container {
@@ -153,7 +168,7 @@ a {
 	overflow: hidden;
 
 	border-radius: 10px;
-	background-color: #cdd7dd;
+	background-color: #ffee8c;
 	border: 2px solid black;
 	font-weight: bold;
 	color: black;
@@ -187,13 +202,13 @@ a {
 .project-header img {
 	height: 25px;
 	object-fit: contain;
-	margin: 0 5px;
+	margin: 0 4px;
 }
 
 .project-body {
 	display: flex;
 	flex-direction: column;
-	padding: 5px;
+	padding: 8px 4px;
 }
 
 .project-body > p > a {
@@ -202,19 +217,21 @@ a {
 
 .project-img img {
 	width: calc(100% + 10px);
-	margin: -5px;
+	margin: -8px -4px;
 }
 
 .project-links {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	margin-top: 8px;
 }
 
 .profile-header-container {
+	position: relative;
 	display: flex;
 	flex-direction: row;
-	align-items: stretch;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -226,27 +243,28 @@ a {
 }
 
 .profile-links {
+	position: absolute;
+	top: 0;
+	right: 0;
 	display: flex;
 	justify-content: space-around;
 }
 
-.profile-header-container .attribute-container {
-	margin-left: 5px;
-	max-width: 183px;
-	min-width: 183px;
+.profile-links img {
+	margin-left: 4px;
+	margin-right: 4px;
 }
 
 .profile-img-div {
-	width: 100px;
-	height: 100px;
-	margin: 10px 5px;
-	border-radius: 50px;
-	background-image: url(./assets/IMG_0793.webp);
+	width: 200px;
+	height: 200px;
+	margin: 8px 16px;
+	border-radius: 50%;
 	background-size: 100px;
-	border: 1px solid black;
+	border: 2px solid black;
 	font-weight: bold;
 	color: black;
-	box-shadow: 2px 3px 0px 1px black;
+	box-shadow: 4px 4px 0px 1px black;
 }
 
 .more-button {
@@ -321,9 +339,8 @@ a {
 	}
 
 	.profile-header-container .bio {
-		padding-left: 5px;
+		padding: 8px;
 		min-width: 350px;
 		flex: 1;
-		border-left: 2px solid black;
 	}
 }
