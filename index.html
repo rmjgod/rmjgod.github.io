@@ -16,16 +16,16 @@
 			href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" />
 		<script>
 			function seeMoreFunction(id) {
-				const moreContent = document.getElementById(id + '-content');
-				const btnText = document.getElementById(id + '-button');
+				const moreContent = document.getElementById(`${id}-content`);
+				const btnText = document.getElementById(`${id}-button`);
 				if (moreContent.style.display === 'none') {
 					moreContent.style.display = 'inline';
 					btnText.innerHTML = 'Read Less';
-					btnText.ariaExpanded = true;
+					btnText.setAttribute('aria-expanded', 'true');
 				} else {
 					moreContent.style.display = 'none';
 					btnText.innerHTML = 'Read More';
-					btnText.ariaExpanded = false;
+					btnText.setAttribute('aria-expanded', 'false');
 				}
 			}
 			function moreProjectsFunction() {
@@ -34,11 +34,11 @@
 				if (moreContent.style.display === 'none') {
 					moreContent.style.display = 'inline';
 					btnText.innerHTML = 'Less Projects';
-					btnText.ariaExpanded = true;
+					btnText.setAttribute('aria-expanded', 'true');
 				} else {
 					moreContent.style.display = 'none';
 					btnText.innerHTML = 'More Projects';
-					btnText.ariaExpanded = false;
+					btnText.setAttribute('aria-expanded', 'false');
 				}
 			}
 		</script>
@@ -66,7 +66,7 @@
 		</div>
 		<div class="container">
 			<div>
-				<h1>About</h1>
+				<h2>About</h2>
 				<div class="info-bar">
 					<div class="profile-header-container">
 						<div class="profile-links" >
@@ -84,7 +84,7 @@
 							/></a>
 						</div>
 						<div class="attribute-container">
-							<h3 style="margin-top: 0;">Contact:</h3>
+							<h4 style="margin-top: 0;">Contact:</h4>
 							<p>
 								<a href="mailto:ryanmjgodfrey@gmail.com">
 								<img alt="Send an email to Ryan Godfrey" src="./assets/email.png"/>
@@ -99,7 +99,7 @@
 					</div>
 					<div class="experience-container">
 						<div class="attribute-container">
-							<h3>Experience:</h3>
+							<h4>Experience:</h4>
 							<!-- Nav Canada -->
 							<p>
 								<strong>Software Developer</strong>
@@ -146,7 +146,7 @@
 							</p>
 						</div>
 						<div class="attribute-container">
-							<h3>Teaching:</h3>
+							<h4>Teaching:</h4>
 							<!-- Intro to OO -->
 							<p>
 								<strong>Teaching Assistant (Java)</strong>
@@ -193,7 +193,7 @@
 							</p>
 						</div>
 						<div class="attribute-container">
-							<h3>Education:</h3>
+							<h4>Education:</h4>
 							<!-- UOttawa -->
 							<p>
 								<strong
@@ -218,7 +218,7 @@
 				</div>
 			</div>
 			<div class="main-column">
-				<h1>Projects</h1>
+				<h2>Projects</h2>
 
 				<!-- rmjgod.github.io -->
 				<div class="project-container">
@@ -234,9 +234,12 @@
 								class="dummy-button"
 								style="background-color: green"></div>
 						</div>
-						<h2 class="project-title">
-							<a href="http://rmjgod.github.io">ryangodfrey.tech</a>
-						</h2>
+						<h3 class="project-title">
+							<a href="http://rmjgod.github.io" target="_blank">
+								ryangodfrey.tech
+								<img alt="external link icon" src="./assets/external-link-icon.svg"/>
+							</a>
+						</h3>
 						<div class="dummy-button-container">
 							<img
 								alt="HTML Logo"
@@ -253,14 +256,14 @@
 						</div>
 					</div>
 					<div class="project-body">
-						<h3>Purpose</h3>
+						<h4>Purpose</h4>
 						<p>
 							This website was created to serve as a static gallery of projects that I
 							have created or contributed to significantly. It is also intended to
 							"kill two birds with one stone", and provide the opportunity for you to
 							learn a bit about my background as a growing software engineer.
 						</p>
-						<h3>Execution</h3>
+						<h4>Execution</h4>
 						<p>
 							This website was created using a majority of
 							<i>pure</i> HTML5 and CSS, with a little javascript sprinkled in for
@@ -276,7 +279,7 @@
 							>
 							font.
 						</p>
-						<h3>Inspiration</h3>
+						<h4>Inspiration</h4>
 						<p>
 							The style of this website was inspired by my interest in the
 							neo-brutalism UI design style. I tried to stick with a muted RGB colour
@@ -301,14 +304,17 @@
 								class="dummy-button"
 								style="background-color: green"></div>
 						</div>
-						<h2 class="project-title">
-							<a href="http://teaminglis.ca">curling.websites</a>
-						</h2>
+						<h3 class="project-title">
+							<a href="http://teaminglis.ca" target="_blank">
+								Curling Team Websites
+								<img alt="external link icon" src="./assets/external-link-icon.svg"/>
+							</a>
+						</h3>
 						<div class="dummy-button-container">
 							<img
 								alt="ReactJs Logo"
 								title="React"
-								src="./assets/framework-logos/react-logo.webp" />
+								src="./assets/framework-logos/react-logo.svg" />
 							<img
 								alt="Javascript Logo"
 								title="JavaScript"
@@ -342,7 +348,7 @@
 								<b>TeamBrunton.ca</b></a
 							>
 						</p>
-						<h3>Purpose</h3>
+						<h4>Purpose</h4>
 						<p>
 							These web applications were created to serve as a globally available,
 							and accessible platforms to access everything that has to do with a
@@ -369,12 +375,13 @@
 							>
 							<button
 								id="curling-team-purpose-button"
+								aria-controls="curling-team-purpose-content"
 								class="more-button"
 								onclick="seeMoreFunction('curling-team-purpose')">
 								Read More
 							</button>
 						</p>
-						<h3>Execution</h3>
+						<h4>Execution</h4>
 						<p>
 							This website was created using the React framework as a foundation, with
 							Material UI elements for the front-end. Google Firestore and Analytics
@@ -391,11 +398,12 @@
 							<button
 								id="curling-team-execution-button"
 								class="more-button"
+								aria-controls="curling-team-execution-content"
 								onclick="seeMoreFunction('curling-team-execution')">
 								Read More
 							</button>
 						</p>
-						<h3>Inspiration</h3>
+						<h4>Inspiration</h4>
 						<p>
 							The inspiration of this application came from my first-hand knowledge of
 							the inadequacies with the current landscape of curling websites and
@@ -424,16 +432,17 @@
 									class="dummy-button"
 									style="background-color: green"></div>
 							</div>
-							<h2 class="project-title">
-								<a href="https://github.com/Mariam05/WildernessSurvivalApp"
-									>Wilderness Survival App</a
-								>
-							</h2>
+							<h3 class="project-title">
+								<a href="https://github.com/Mariam05/WildernessSurvivalApp" target="_blank">
+									Wilderness Survival App
+									<img alt="external link icon" src="./assets/external-link-icon.svg"/>
+								</a>
+							</h3>
 							<div class="dummy-button-container">
 								<img
 									alt="React Native Logo"
 									title="React Native"
-									src="./assets/framework-logos/react-logo.webp" />
+									src="./assets/framework-logos/react-logo.svg" />
 								<img
 									alt="Typescript Logo"
 									title="TypeScript"
@@ -445,7 +454,7 @@
 							</div>
 						</div>
 						<div class="project-body">
-							<h3>Purpose</h3>
+							<h4>Purpose</h4>
 							<p>
 								This project was developed as part of my fourth-year capstone
 								project, with a group of 3 individuals. The application was designed
@@ -456,7 +465,7 @@
 								flaws that can make the process of tracking vitals a hindrance to
 								the care that needs to be provided to the wounded and sick.
 							</p>
-							<h3>Execution</h3>
+							<h4>Execution</h4>
 							<p>
 								The application was built using React Native for a seamless
 								development process for both Android and iOS platforms. MongoDB /
@@ -489,11 +498,12 @@
 								<button
 									id="wilderness-survival-purpose-button"
 									class="more-button"
+								aria-controls="wilderness-survival-purpose-content"
 									onclick="seeMoreFunction('wilderness-survival-purpose')">
 									Read More
 								</button>
 							</p>
-							<h3>Inspiration</h3>
+							<h4>Inspiration</h4>
 							<p>
 								The inspiration for the development of this application came from
 								the identification of the flaws and "old-school" practices that are
@@ -519,11 +529,12 @@
 									class="dummy-button"
 									style="background-color: green"></div>
 							</div>
-							<h2 class="project-title">
-								<a href="https://github.com/john-breton/Trustworthy-Product-Reviews"
-									>Trusty Product Reviews</a
-								>
-							</h2>
+							<h3 class="project-title">
+								<a href="https://github.com/john-breton/Trustworthy-Product-Reviews" target="_blank">
+									Trusty Product Reviews
+									<img alt="external link icon" src="./assets/external-link-icon.svg"/>
+								</a>
+							</h3>
 							<div class="dummy-button-container">
 								<img
 									alt="Spring Logo"
@@ -540,7 +551,7 @@
 							</div>
 						</div>
 						<div class="project-body">
-							<h3>Purpose</h3>
+							<h4>Purpose</h4>
 							<p>
 								This web application was created with a team of 5 students for a
 								course on project management. The application allows users to review
@@ -548,17 +559,17 @@
 								on other reviewers that are like-minded (Jaccard distance) or users
 								that they follow.
 							</p>
-							<h3>Execution</h3>
+							<h4>Execution</h4>
 							<p>
 								This application was developed as a Single Page Application (SPA)
 								with the Java programming language, utilizing the Spring framework
-								with an integrated H2 database. The application was compiled and
+								with an integrated h3 database. The application was compiled and
 								deployed using Maven and Heroku (since the changes to Heroku's terms
 								of service
 								<i>(Nov 2022)</i>, the deployment is no longer visible, as it was
 								deployed on a free tier).
 							</p>
-							<h3>Inspiration</h3>
+							<h4>Inspiration</h4>
 							<p>
 								The inspiration for this project came from the want / need to see
 								reviews that are relevant to the user, instead of the reviews that
@@ -588,11 +599,12 @@
 									class="dummy-button"
 									style="background-color: green"></div>
 							</div>
-							<h2 class="project-title">
-								<a href="https://github.com/john-breton/LookInnaBook"
-									>LookInnaBook</a
-								>
-							</h2>
+							<h3 class="project-title">
+								<a href="https://github.com/john-breton/LookInnaBook" target="_blank">
+									LookInnaBook
+									<img alt="external link icon" src="./assets/external-link-icon.svg"/>
+								</a>
+							</h3>
 							<div class="dummy-button-container">
 								<div style="background-color: #5c5c5c"></div>
 								<img
@@ -606,7 +618,7 @@
 							</div>
 						</div>
 						<div class="project-body">
-							<h3>Purpose</h3>
+							<h4>Purpose</h4>
 							<p>
 								This application was created with a team of 2 members for a final
 								project in a database management course during my undergrad. The
@@ -615,7 +627,7 @@
 								with admin privileges are able to modify and update the stock and
 								availability of books as necessary.
 							</p>
-							<h3>Execution</h3>
+							<h4>Execution</h4>
 							<p>
 								The application was developed largely using the Java Swing library
 								for front-end (GUI) development, and a PostgreSQL database as the
@@ -639,11 +651,11 @@
 				</button>
 			</div>
 			<div>
-				<h1>Stack</h1>
+				<h2>Stack</h2>
 				<div
 					class="info-bar"
 					style="background-color: #e0bbe4">
-					<h3>Languages</h3>
+					<h4>Languages</h4>
 					<div class="logo-container">
 						<div>
 							<img
@@ -703,7 +715,7 @@
 						</div>
 					</div>
 					<br />
-					<h3>Operating Systems</h3>
+					<h4>Operating Systems</h4>
 					<div class="logo-container">
 						<div>
 							<img
@@ -735,7 +747,7 @@
 						</div>
 					</div>
 					<br />
-					<h3>Front-end</h3>
+					<h4>Front-end</h4>
 					<div class="logo-container">
 						<div>
 							<img
@@ -747,20 +759,20 @@
 						<div>
 							<img
 								alt="ReactJs Logo"
-								src="./assets/framework-logos/react-logo.webp"
+								src="./assets/framework-logos/react-logo.svg"
 								title="React" />
 							<p>React</p>
 						</div>
 						<div>
 							<img
 								alt="React Native Logo"
-								src="./assets/framework-logos/react-logo.webp"
+								src="./assets/framework-logos/react-logo.svg"
 								title="React Native" />
 							<p>React Native</p>
 						</div>
 					</div>
 					<br />
-					<h3>Back-end</h3>
+					<h4>Back-end</h4>
 					<div class="logo-container">
 						<div>
 							<img
@@ -778,7 +790,7 @@
 						</div>
 					</div>
 					<br />
-					<h3>Databases</h3>
+					<h4>Databases</h4>
 					<div class="logo-container">
 						<div>
 							<img
